@@ -1,0 +1,2 @@
+*.DS_Store
+terraform.d/plugins/darwin_amd64/*
