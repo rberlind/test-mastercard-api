@@ -1,4 +1,4 @@
 provider "restapi" {
-  uri = "https://myapi.env.local/api/v1"
+  uri = "${var.uri}"
 }
 
