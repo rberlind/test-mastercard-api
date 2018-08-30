@@ -18,6 +18,9 @@ data "restapi_object" "tfe_workspace" {
   debug = true
 }
 
+resource "random_pet" "my_pet" {
+}
+
 output "workspace_id " {
   value = "${data.restapi_object.tfe_workspace.id}"
 }
