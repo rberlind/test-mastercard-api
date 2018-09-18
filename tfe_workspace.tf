@@ -11,7 +11,7 @@ provider "restapi" {
 }
 
 variable "search_value" {
-  defalt = "gcp-compute-instance"
+  default = "gcp-compute-instance"
 }
 
 data "restapi_object" "tfe_workspace" {
