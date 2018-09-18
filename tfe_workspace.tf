@@ -10,11 +10,16 @@ provider "restapi" {
   debug = true
 }
 
+variable "search_value" {
+  defalt = "gcp-compute-instance"
+}
+
 data "restapi_object" "tfe_workspace" {
   path = "/organizations/Cloud-Operations/workspaces"
+  #id_attribute = "name"
   results_key = "data"
   search_key = "attributes/name"
-  search_value = "gcp-compute-instance"
+  search_value = "${var.search_value}"
   debug = true
 }
 
